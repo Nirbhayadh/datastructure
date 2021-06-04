@@ -14,11 +14,12 @@ list.search(1);
     list.traverse();
     list.remove(5);
     list.traverse();
-//     list.search(7);
-//     list.search(10);
-//     list.traverse();
-//     list.removeFromHead();
-// list.removeFromTail();
+    list.search(7);
+    list.search(10);
+    list.traverse();
+    list.removeFromHead();
+    list.removeFromTail();
+    list.traverse();
 
     
     // list.addToHead(5);
