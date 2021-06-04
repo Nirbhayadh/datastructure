@@ -1,10 +1,12 @@
 #include "LinkedList.h"
-// #include "Stack.h"
+#include "LinkedListStack.h"
 
 int main() 
 {
+
+    std::cout<<"Linked List Only"<<std::endl<<std::endl;
     LinkedList list;
-list.search(1);
+    list.search(1);
 
     list.addToHead(5);
     list.addToHead(7);
@@ -18,35 +20,23 @@ list.search(1);
     list.search(10);
     list.traverse();
     list.removeFromHead();
-    list.removeFromTail();
-    list.traverse();
+list.removeFromTail();
+list.traverse();
 
-    
-    // list.addToHead(5);
-    // list.addToHead(10);
-    // list.addToHead(15);
 
-    // list.traverse(',');
+    std::cout<<std::endl<<std::endl<<std::endl;
+    std::cout<<"Stack Using Linked List"<<std::endl<<std::endl;
+    std::cout<<std::endl<<std::endl<<std::endl;
 
-    // list.removeFromHead();
-    
-    // list.traverse();
 
-    // list.removeFromHead();
-    
-    // list.traverse();
-
-    // list.removeFromHead();
-    
-    // list.traverse();
-
-    // list.removeFromHead();
-    
-    // list.traverse();
-
-    // LinkedListStack s;
-    // s.push(5);
-    // s.push(10);
-
-    // std::cout << s.pop() << ", " << s.pop() << std::endl; 
+LinkedListStack l;
+l.top();
+l.push(6);
+l.push(10);
+l.top();
+l.pop();
+l.top();
 }
+
+    std::cout<<"Queue Using Linked List"<<std::endl<<std::endl;
+// TBD

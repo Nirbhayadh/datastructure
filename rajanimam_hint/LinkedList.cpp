@@ -18,6 +18,7 @@ bool LinkedList::isEmpty()
 
 void LinkedList::addToHead(int element)
 {
+    
     Node *newNode = new Node(element, HEAD);
 
     HEAD = newNode;
@@ -30,7 +31,9 @@ void LinkedList::addToHead(int element)
 
  void LinkedList::addToTail(int data){
 Node *newNode=new Node(data,nullptr);
+
 TAIL->next=newNode;
+
 TAIL=newNode;
 if (HEAD==nullptr){
     HEAD=TAIL;
@@ -109,6 +112,16 @@ if (HEAD == nullptr)
      else {
     std::cout<<"Sorry, List is empty"<<std::endl;
      }
+
+ }
+
+ void LinkedList::top(){
+if(!isEmpty()){
+std::cout<<"Top most element: "<<HEAD->info<<std::endl;
+}
+else{
+    std::cout<<"Sorry, the list is empty"<<std::endl;
+}
 
  }
   void LinkedList::search(int data){

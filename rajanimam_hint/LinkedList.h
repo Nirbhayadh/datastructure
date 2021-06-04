@@ -34,6 +34,7 @@ public:
  void removeFromHead ();
  void removeFromTail ();
  void remove(int data);
+ void top();
  void search(int data);
  bool retrieve(int data, Node *dataOutPtr);
  void traverse(char separator = ' ');
