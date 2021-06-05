@@ -16,7 +16,7 @@ public:
 
  virtual void push(const int element);
  virtual void pop();
- virtual void top() ;
+ virtual void top();
 
 
 

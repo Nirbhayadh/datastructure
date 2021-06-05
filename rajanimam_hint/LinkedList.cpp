@@ -31,16 +31,23 @@ void LinkedList::addToHead(int element)
 
  void LinkedList::addToTail(int data){
 Node *newNode=new Node(data,nullptr);
-
+if(TAIL==nullptr){
+    TAIL=newNode;
+    HEAD=TAIL;
+}
+else{
 TAIL->next=newNode;
 
 TAIL=newNode;
-if (HEAD==nullptr){
-    HEAD=TAIL;
 }
+// if (HEAD==nullptr){
+//     HEAD=TAIL;
+// }
     std::cout<<"Added to TAIL: "<<data<<std::endl;
 
  }
+
+
   bool LinkedList::add(int data, Node *predecessor ){
 Node *newnode=new Node(data,predecessor->next);
 predecessor->next=newnode;
@@ -118,6 +125,14 @@ if (HEAD == nullptr)
  void LinkedList::top(){
 if(!isEmpty()){
 std::cout<<"Top most element: "<<HEAD->info<<std::endl;
+}
+else{
+    std::cout<<"Sorry, the list is empty"<<std::endl;
+}
+ }
+ void LinkedList::rear(){
+if(!isEmpty()){
+std::cout<<"Rear most element: "<<TAIL->info<<std::endl;
 }
 else{
     std::cout<<"Sorry, the list is empty"<<std::endl;
